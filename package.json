@@ -1,0 +1,11 @@
+{
+    "name": "pagesettingcomfulu",
+    "version": "1.0.8",
+    "description": "自定义组件",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Hsong",
+    "license": "ISC"
+}
