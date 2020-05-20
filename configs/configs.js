@@ -3,7 +3,7 @@
 // 本地开发环境
 var configs = {
   // baseUrl: 'http://dev.h5-member.k8s.ichnb.com',
-  //openAPI: 'http://10.0.1.235:10003',  // 程诗雨本地
+  // openAPI: 'http://10.0.1.235:10003',  // 程诗雨本地
   // openAPI: 'http://10.0.1.235:10003',  // 邓欢本地
   // openAPI: 'http://10.0.1.146:10003',  // 张瑞本地
   // baseUrl: 'http://user.mall.api-admin.fulu.com',  // 线上环境

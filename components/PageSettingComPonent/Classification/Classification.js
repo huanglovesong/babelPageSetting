@@ -103,7 +103,7 @@ var ClassificationBox = (_temp = _class = function (_Component) {
     var len = tabsItem.dataDetailCacheModels.length % 2 === 0 ? tabsItem.dataDetailCacheModels.length / 2 : parseInt(tabsItem.dataDetailCacheModels.length / 2) + 1;
     // let productHeight = `${(len * 229) / 50}rem`;
     var style = {
-      margin: productMargin + 'px',
+      margin: productMargin / 50 + 'rem',
       display: 'inline-block'
       // width: '100%'
     };
@@ -139,13 +139,24 @@ var ClassificationBox = (_temp = _class = function (_Component) {
               ),
               _react2.default.createElement(
                 'div',
+                { className: 'status-content' },
+                item.isCouponAfterPrice && item.couponBatchid && _react2.default.createElement('div', { className: 'discount-price-img' })
+              ),
+              _react2.default.createElement(
+                'div',
                 { className: 'price' },
-                _react2.default.createElement(
-                  'small',
+                item.integral && _react2.default.createElement(
+                  'span',
                   null,
+                  item.integral,
+                  '\u79EF\u5206+'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { className: 'small' },
                   '\uFFE5'
                 ),
-                item.price,
+                item.isCouponAfterPrice && item.couponBatchid ? item.couponAfterPrice : item.price,
                 _react2.default.createElement(
                   's',
                   { className: 'del-price' },
@@ -183,15 +194,15 @@ var ClassificationBox = (_temp = _class = function (_Component) {
       // 页面边距
       var pageMargin = item.modelStyle.classStyleModel.pageMargin;
       var style = {
-        margin: productMargin + 'px',
+        margin: productMargin / 50 + 'rem',
         display: 'inline-block'
         // width: '100%'
       };
       var style1 = {
-        marginLeft: '-' + productMargin + 'px',
-        marginRight: '-' + productMargin + 'px',
-        paddingLeft: pageMargin + 'px',
-        paddingRight: pageMargin + 'px'
+        marginLeft: '-' + productMargin / 50 + 'rem',
+        marginRight: '-' + productMargin / 50 + 'rem',
+        paddingLeft: pageMargin / 50 + 'rem',
+        paddingRight: pageMargin / 50 + 'rem'
       };
 
       return _react2.default.createElement(
